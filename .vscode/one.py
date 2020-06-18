@@ -65,3 +65,36 @@ tacos.remove('Steak')
 print(tacos)
 
 
+"""Popping objects off a list
+   the pop method removes and returns an object from an existing list based on the object's index value.
+   I we ommit d not specify the index value the pop method removes  and returns the last object of the list
+
+   a returned object can be assigned to a variable if not the memory is reclaimed ant the objects disappears
+
+"""
+
+deleted = tacos.pop(7)
+print(deleted)
+
+tacos.pop(6)
+
+"""
+   Extending a list with objects
+   Extend is a method that takes a second list and adds each of its elements to an existing list
+
+"""
+print(tacos)
+
+tacos.extend(['Vegan Chorizo', 'Vegan Tinga'])
+
+print(tacos)
+
+"""
+   Insert takes an index value and on object as its arguments
+   inserts an object into an existing list before a specified index value
+   It is not possible to insert at the end of the list, as that's the append method porpuse
+"""
+
+tacos.insert(5, 'Brisket')
+
+print(tacos)
